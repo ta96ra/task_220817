@@ -1021,7 +1021,6 @@ header{
 .background-clouds{
   position: relative;
   height: 100%;
-  // background: skyblue;
   img[src*="cloudright"]{
     position: absolute;
     right: 0;
@@ -1512,7 +1511,6 @@ header{
       bottom: 0;
       z-index: -10;
       height: 100%;
-      padding-bottom: 100%;
       img{
         height: 100%;
         object-fit: cover;
