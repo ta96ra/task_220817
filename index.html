@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task220817</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header">
+    <div class="wrapper">
+      <a class="logo" href="#top">
+        <img src="images/logo.jpg" alt="">
+      </a>
+      <nav>
+        <ul class="header-nav">
+          <li><a href="#top">TOP</a></li>
+          <li><a href="#recommendation">おすすめの<br>動画</a></li>
+          <li><a href="#contents">コンテンツ</a></li>
+          <li><a href="#summary">開催概要</a></li>
+          <li><a href="#news">お知らせ</a></li>
+          <li><a href="#">アンケート<br>のお願い</a></li>
+        </ul>
+        <ul class="header-btn">
+          <li class="mypage">
+            <a href="#"><i class="fa-solid fa-user"></i>マイページ</a>
+          </li>
+          <li class="logout">
+            <a href="#"><i class="fa-solid fa-door-open"></i>ログアウト</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="hamburger" class="toggle toggle-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="hamburger-menu toggle-hamburger">
+      <nav>
+        <ul class="hamburger-nav">
+          <li><a class="toggle" href="#top">TOP</a></li>
+          <li><a class="toggle" href="#recommendation">おすすめの動画</a></li>
+          <li><a class="toggle"href="#contents">コンテンツ</a></li>
+          <li><a class="toggle" href="#summary">開催概要</a></li>
+          <li><a class="toggle" href="#news">お知らせ</a></li>
+          <li><a class="toggle" href="#">アンケートのお願い</a></li>
+        </ul>
+        <ul class="hamburger-btn">
+          <li class="mypage">
+            <a class="toggle" href="#"><i class="fa-solid fa-user"></i>マイページ</a>
+          </li>
+          <li class="logout">
+            <a class="toggle" href="#"><i class="fa-solid fa-door-open"></i>ログアウト</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="mask toggle-hamburger"></div>
+  <div id="scrolled-target"></div>
+  <div id="top" class="mainvisual">
+    <div class="container">
+      <ul id="ul">
+        <li>
+          <img src="images/mainvisual.jpg" alt="">
+          <a class="mypage" href="#">
+            <i class="fa-solid fa-user">マイページはこちら
+            </i>
+          </a>
+          <div class="questionary">
+            <a class="questionary-btn" href="#">
+              <img src="images/questionary.png" alt="">
+              <p>アンケート<br>のお願い</p>
+            </a>
+            <div class="questionary-close">×</div>
+          </div>
+        </li>
+        <li>
+          <img src="images/mainvisual.jpg" alt="">
+          <a class="mypage" href="#">
+            <i class="fa-solid fa-user">マイページはこちら
+            </i>
+          </a>
+          <div class="questionary">
+            <a class="questionary-btn" href="#">
+              <img src="images/questionary.png" alt="">
+              <p>アンケート<br>のお願い</p>
+            </a>
+            <div class="questionary-close">×</div>
+          </div>
+        </li>
+        <li>
+          <img src="images/mainvisual.jpg" alt="">
+          <a class="mypage" href="#">
+            <i class="fa-solid fa-user">マイページはこちら
+            </i>
+          </a>
+          <div class="questionary">
+            <a class="questionary-btn" href="#">
+              <img src="images/questionary.png" alt="">
+              <p>アンケート<br>のお願い</p>
+            </a>
+            <div class="questionary-close">×</div>
+          </div>
+        </li>
+      </ul>
+      <div id="prev" class="btn">
+        <img src="images/circle.png" alt="">
+        <img src="images/prevarrow.png" alt="">
+      </div>
+      <div id="next" class="btn">
+        <img src="images/circle.png" alt="">
+        <img src="images/nextarrow.png" alt="">
+      </div>
+    </div>
+    <nav id="nav">
+      <!-- <button class="dot-btn"></button> -->
+    </nav>
+  </div>
+  <div id="topics">
+    <div class="wrapper">
+      <h2>TOPICS</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <dl>
+              <dt>2022/08/20</dt>
+              <dd>10月開催コンテンツの配信を開始しました。</dd>
+            </dl>
+            <img src="images/topicsarrow.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <dl>
+              <dt>2022/07/20</dt>
+              <dd>9月開催コンテンツの配信を開始しました。</dd>
+            </dl>
+            <img src="images/topicsarrow.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <dl>
+              <dt>2022/06/20</dt>
+              <dd>8月開催コンテンツの配信を開始しました。</dd>
+            </dl>
+            <img src="images/topicsarrow.png" alt="">
+          </a>
+        </li>
+        <div id="all-watch">
+          <p>すべて見る</p>
+          <img src="images/topicsarrow.png" alt="">
+        </div>
+      </ul>
+    </div>
+  </div>
+  <section id="special-skill">
+    <div class="wrapper">
+      <div class="special-skill-top">
+        <div class="special-skill-images">
+          <img src="images/sky.jpg" alt="">
+          <img src="images/town.png" alt="">
+          <img src="images/sun.png" alt="">
+          <img src="images/reseach.png" alt="">
+          <img src="images/cafe.png" alt="">
+          <img src="images/lecture.png" alt="">
+        </div>
+        <div class="special-skill-unicode">
+          <h2>特別なスキルを身に付けたい方に</h2>
+          <h3>異字体と Unicode IVS</h3>
+          <p>日本国内では Unicodeの普及が進むにつれ、JIS X 0208、JIS X 0213 等の日本固有の符号化文化集合との相互運用性がソフトウェア、サービスの開発において大きな課題の一つになっています。本セミナーは Unicode、JIS X 0208、JIS X 0213 の符号文化文字集合、文字符号化方式の正しい理解、文字コードの動向、そしてこれらを扱う上でどのような注意が必要なのか、そして IVS、IVD の Windows 上での対応状況を含めて、IT 管理者、開発者に必要な基礎知識の理解を目指します。</p>
+        </div>
+      </div>
+      <div class="special-skill-bottom">
+        <div class="special-skill-video video-play">
+          <img src="images/skillvideo.jpg" alt="">
+          <img src="images/playbtn.png" alt="">
+          <img src="images/playarrow.png" alt="">
+        </div>
+        <div class="special-skill-address">
+          <h3>新しい IP アドレス IPv6 入門編</h3>
+          <p>IPv4 アドレスの枯渇化にともない、IPv6 導入への活動はより活発になってきています。今後IT業界だけでなく広い分野でそのニーズは高まっていくことが予想されます。本セミナーでは、IPv6 の特徴や IPv4 環境との共存における基本的な技術について実際の環境におけるデモを交えて解説します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="recommendation">
+    <div class="title">
+      <p>RECOMMENDATION</p>
+      <h2>おすすめ動画</h2>
+    </div>
+    <div class="video-container">
+      <ul id="video-contents">
+        <li class="video-play" data-index="0">
+          <img src="images/video1.jpg" alt="">
+          <img src="images/playbtn.png" alt="">
+          <img src="images/playarrow.png" alt="">
+          <div class="side-tag">
+            <p>2022<span>年 </span>10<span>月 </span>18<span>日(木)</span></p>
+          </div>
+        </li>
+        <li class="video-play" data-index="1">
+          <img src="images/video2.jpg" alt="">
+          <img src="images/playbtn.png" alt="">
+          <img src="images/playarrow.png" alt="">
+          <div class="side-tag">
+            <p>オンデマンド配信</p>
+          </div>
+        </li>
+        <li class="video-play" data-index="2">
+          <img src="images/video3.jpg" alt="">
+          <img src="images/playbtn.png" alt="">
+          <img src="images/playarrow.png" alt="">
+          <div class="side-tag">
+            <p>オンデマンド配信</p>
+          </div>
+        </li>
+        <li class="video-play"data-index="3">
+          <img src="images/video1.jpg" alt="">
+          <img src="images/playbtn.png" alt="">
+          <img src="images/playarrow.png" alt="">
+          <div class="side-tag">
+            <p>2022<span>年 </span>7<span>月 </span>21<span>日(木)</span></p>
+          </div>
+        </li>
+        <li class="video-play" data-index="4">
+          <img src="images/video2.jpg" alt="">
+          <img src="images/playbtn.png" alt="">
+          <img src="images/playarrow.png" alt="">
+          <div class="side-tag">
+            <p>オンデマンド配信</p>
+          </div>
+        </li>
+        <li class="video-play" data-index="5">
+          <img src="images/video3.jpg" alt="">
+          <img src="images/playbtn.png" alt="">
+          <img src="images/playarrow.png" alt="">
+          <div class="side-tag">
+            <p>オンデマンド配信</p>
+          </div>
+        </li>
+      </ul>
+      <div id="video-prev" data-index="6">
+        <img src="images/videonextarrow.png" alt="">
+      </div>
+      <div id="video-next">
+        <img src="images/videonextarrow.png" alt="">
+      </div>
+    </div>
+    <nav id="video-nav">
+      <!-- <button class="dot-button"></button> -->
+    </nav>
+  </section>
+  <div class="video-modal">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/u69FiN7CEB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="close">&times</div>
+  </div>
+  <div class="background-clouds">
+    <section id="contents">
+      <div class="wrapper content">
+        <div class="title">
+          <p>CONTENTS</p>
+          <h2>コンテンツ</h2>
+        </div>
+        <nav class="contents-links">
+          <a href="#mova">
+            <p>MOVA独占</p>
+            <img src="images/topicsarrow.png" alt="">
+            <img src="images/nextarrow.png" alt="">
+          </a>
+          <a href="#seminar">
+            <p>受付中</p>
+            <img src="images/topicsarrow.png" alt="">
+            <img src="images/nextarrow.png" alt="">
+          </a>
+          <a href="#curriculum">
+            <p>カリキュラム一覧</p>
+            <img src="images/topicsarrow.png" alt="">
+            <img src="images/nextarrow.png" alt="">
+          </a>
+        </nav>
+        <div id="mova" class="contents-item">
+          <h3>MOVA独占ウェビナー</h3>
+          <ul>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/movaignite.jpg" alt="">
+                <p class="square">MOVA Ignite</p>
+                <p class="bold">テクノロジから最大限の<span>価値</span>を引き出す</p>
+                <div class="side-tag">
+                  <p>事前申込</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="calendar">
+                    <img src="images/calendar.png" alt="">
+                    <div class="side-tag">
+                      <p>2022<span>年</span>10<span>月</span>18<span>日(木)</span></p>
+                    </div>
+                  </div>
+                  <div class="clock">
+                    <img src="images/clock.png" alt="">
+                    <p>11:00~12:30</p>
+                  </div>
+                </div>
+                <p class="serial">AzureK</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>佐々木一郎</p>
+                <div class="skills">
+                  <p>C#</p>
+                  <p>ASP.NET MVC</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/movaenvision.jpg" alt="">
+                <img src="images/reserve.png" alt="">
+                <p class="square">MOVA Envision</p>
+                <p class="bold">組織がイノベーションを<span>加速</span>させるための方法</p>
+                <div class="side-tag">
+                  <p>事前申込</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="calendar">
+                    <img src="images/calendar.png" alt="">
+                    <p>2022<span>年</span>10<span>月</span>11<span>日(木)</span></p>
+                  </div>
+                  <div class="clock">
+                    <img src="images/clock.png" alt="">
+                    <p>11:00~12:30</p>
+                  </div>
+                </div>
+                <p class="serial">djhf66</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>山田二郎</p>
+                <div class="skills">
+                  <p>Azure</p>
+                  <p>Visual Studio</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="seminar"class="contents-item">
+          <div class="item-title">
+            <h3>受付中のセミナー</h3>
+            <p>明日から活用できる最新テクノロジのスキルを身につけるためのトレーニングを無償で提供しています。次のステップを目指している方、スペシャリストを目指している方はぜひ受講ください。</p>
+          </div>
+          <ul>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/detail1.jpg" alt="">
+                <div class="side-tag">
+                  <p>2022<span>年 </span>11<span>月 </span>1<span>日(木)</span></p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="clock">
+                    <img src="images/clock.png" alt="">
+                    <p>11:00~12:30</p>
+                  </div>
+                </div>
+                <p class="serial">AzureK</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>登壇者名</p>
+                <div class="skills">
+                  <p>C#</p>
+                  <p>ASP.NET MVC</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4 class="green">キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/detail2.jpg" alt="">
+                <div class="side-tag">
+                  <p>オンデマンド配信</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="clock"></div>
+                </div>
+                <p class="serial">Azured</p>
+              </div>
+              <p class="seminar green">セミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>登壇者名</p>
+                <div class="skills">
+                  <p>Azure</p>
+                  <p>ASP.NET MVC</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/detail3.jpg" alt="">
+                <div class="side-tag">
+                  <p>オンデマンド配信</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="clock"></div>
+                </div>
+                <p class="serial">Azured</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>登壇者名</p>
+                <div class="skills">
+                  <p>Azure</p>
+                  <p>ASP.NET MVC</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="curriculum" class="contents-item">
+          <h3>カリキュラム一覧</h3>
+          <ul>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/detail1.jpg" alt="">
+                <div class="side-tag">
+                  <p>基礎を身につける</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="clock">
+                    <img src="images/clock.png" alt="">
+                    <p>11:00~12:30</p>
+                  </div>
+                </div>
+                <p class="serial">AzureA</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>登壇者名</p>
+                <div class="skills">
+                  <p>C#</p>
+                  <p>配列とコレクション</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/detail2-1.jpg" alt="">
+                <div class="side-tag">
+                  <p>応用を学ぶ</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="clock"></div>
+                </div>
+                <p class="serial">Azured</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>登壇者名</p>
+                <div class="skills">
+                  <p>C#</p>
+                  <p>ライブラリ</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/detail3.jpg" alt="">
+                <div class="side-tag">
+                  <p>実践編</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="clock"></div>
+                </div>
+                <p class="serial">Azured</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>登壇者名</p>
+                <div class="skills">
+                  <p>Docker</p>
+                  <p>ネットワークの基礎</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/detail1.jpg" alt="">
+                <div class="side-tag">
+                  <p>特別なスキル</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="clock">
+                    <img src="images/clock.png" alt="">
+                    <p>11:00~12:30</p>
+                  </div>
+                </div>
+                <p class="serial">Azurek</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>登壇者名</p>
+                <div class="skills">
+                  <p>Linux</p>
+                  <p>DB アクセス</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー</h4>
+              <a class="image" href="#">
+                <img src="images/detail2-1.jpg" alt="">
+                <div class="side-tag">
+                  <p>出版物のご案内</p>
+                </div>
+              </a>
+              <div class="time">
+                <div class="time-left">
+                  <div class="clock"></div>
+                </div>
+                <p class="serial">Azured</p>
+              </div>
+              <p class="seminar">セミナータイトルセミナータイトルセミナータイトルセミナータイトル</p>
+              <div class="status">
+                <p class="belong">○○○○○○○○株式会社</p>
+                <p class="belong">○○○○○部長</p>
+                <p>登壇者名</p>
+                <div class="skills">
+                  <p>T-SQL</p>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a class="join" href="#">
+          <p>参加申込はこちら</p>
+          <img src="images/nextarrow.png" alt="">
+          <img src="images/topicsarrow.png" alt="">
+        </a>
+      </div>
+      <div class="background-sky">
+        <img src="images/contentsbg.jpg" alt="">
+        <!-- <div class="clouds">
+          <img src="images/cloudright.png" alt="">
+          <img src="images/cloudleft.png" alt="">
+        </div> -->
+      </div>
+    </section>
+    <section id="summary">
+      <div class="title">
+        <p>SUMMARY</p>
+        <h2>開催概要</h2>
+      </div>
+      <dl class="summary-wrapper">
+        <dt>名称</dt>
+        <dd>ON24 デモウェビナー</dd>
+        <dt>開催日時</dt>
+        <dd>9月28日（火）〜10月3日（金）</dd>
+        <dt>開催場所</dt>
+        <dd>MOVA公式サイト（オンライン開催）<br><span>※オンデマンドにて視聴いただけます。</span></dd>
+        <dt>参加方法</dt>
+        <dd>無料（事前登録制 登録締切：11/9 （月） 17:00）</dd>
+        <img src="images/woman.png" alt="">
+        <img src="images/man.png" alt="">
+      </dl>
+      <img src="images/cloudmin1.png" alt="">
+      <img src="images/cloudmin2.png" alt="">
+      <img src="images/cloudmin3.png" alt="">
+      <img src="images/cloudmin4.png" alt="">
+    </section>
+    <section id="news">
+      <div class="wrapper">
+        <div class="title">
+          <p>NEWS</p>
+          <h2>お知らせ</h2>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <dt>2022/10/10</dt>
+              <dd>
+                <p>
+                  液晶テレビ＜ブラビア＞「KDL-40V5 / KDL-46V5」ご愛用のお客様へ移動式（台車付）スタンド及び壁掛け・吊り下げ等で設置したテレビのリアキャビネット（背面部）無償交換のお願いとお詫び
+                </p>
+                <img src="images/topicsarrow.png" alt="">
+              </dd>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dt>2022/07/13</dt>
+              <dd>
+                <p>
+                  VAIOパーソナルコンピューター type L・LV/LNシリーズ 無償点検・修理のお知らせとお詫び
+                </p>
+                <img src="images/topicsarrow.png" alt="">
+              </dd>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dt>2022/05/11</dt>
+              <dd>
+                <p>
+                  パーソナルコンピューター VAIO のバッテリーパック自主交換プログラムについて
+                </p>
+                <img src="images/topicsarrow.png" alt="">
+              </dd>
+            </a>
+          </li>
+        </ul>
+        </dl>
+      </div>
+      <img src="images/cloudright.png" alt="">
+      <img src="images/cloudleft.png" alt="">
+      <img src="images/cloudright.png" alt="">
+      <img src="images/cloudleft.png" alt="">
+      <img src="images/cloudright.png" alt="">
+      <img src="images/cloudleft.png" alt="">
+      <img src="images/cloudright.png" alt="">
+      <img src="images/cloudleft.png" alt="">
+      <img src="images/cloudright.png" alt="">
+    </section>
+  </div>
+  <a id="to-top" href="#top">
+    <img src="images/nextarrow.png" alt="">
+    <p>ページトップ<br>に戻る</p>
+  </a>
+  <footer>
+    <img src="images/footer-shadpw.jpg" alt="">
+    <div class="footer-contents">
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li><a href="#">会社情報</a></li>
+            <li><a href="#">ニュースリリース</a></li>
+            <li><a href="#">環境情報</a></li>
+            <li><a href="#">ご利用条件</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+        </nav>
+        <a class="logo" href="#top">
+          <img src="images/footer-logo.png" alt="">
+        </a>
+        <small>&copy;MOVA 2022</small>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
